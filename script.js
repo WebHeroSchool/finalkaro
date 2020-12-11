@@ -119,4 +119,4 @@ const easyCheck = document.getElementById('easyCheck');
      menu.classList.remove('displayNone');
      game.classList.add('displayNone');
    };
- } 
+ }

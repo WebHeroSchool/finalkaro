@@ -1,4 +1,4 @@
-body, html {
+ body, html {
    margin: 0;
    }
 
@@ -287,9 +287,8 @@ body, html {
    }
  }
 
- @media (min-width: 1745px) {
+ @media (min-width: 1740px) {
 
    .page__background  {
      width: 100%;
    }
- }
