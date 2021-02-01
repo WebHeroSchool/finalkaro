@@ -100,10 +100,18 @@ const easyCheck = document.getElementById('easyCheck');
    return imgStringEnd;
  }
 
+ let isFliped = false;
+
  function flip(cardSequence, index) {
    return function() {
-     cardSequence[index].classList.toggle("is-flipped");
-     cardSequence[index].addEventListener("click", backToMenu());
+
+     if (!isFliped) {
+       cardSequence[index].classList.toggle("is-flipped");
+       cardSequence[index].addEventListener("click", backToMenu());
+       isFliped = true
+     } else {
+       window.location.reload()
+     }
      for (let j = 0; j < cardSequence.length; j++) {
        cardSequence[j].removeEventListener("click", flip(cardSequence, j));
      }
